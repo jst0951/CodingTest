@@ -43,8 +43,6 @@ def solution(fees, records):
             extra_price = math.ceil(extra_time / unit_time) * unit_price
         
         history_dict[number]["TOTAL_PRICE"] = default_price + extra_price
-        
-    print(history_dict)
             
     # list로 변환
     history_list = []
@@ -54,5 +52,6 @@ def solution(fees, records):
     # 이름순으로 정렬
     history_list.sort(key=lambda x:x[0])
 
+    
     return [x[1] for x in history_list]
     
