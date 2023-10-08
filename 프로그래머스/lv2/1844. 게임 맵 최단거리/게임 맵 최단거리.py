@@ -10,7 +10,6 @@ def solution(maps):
         node = queue.popleft()
         x = node[0]
         y = node[1]
-        #print_visited(maps, visited)
         
         # 각 방향으로 접근 가능한지, 비방문 상태인지 판별
         move_list = [[1, 0], [-1, 0], [0, 1], [0, -1]]
