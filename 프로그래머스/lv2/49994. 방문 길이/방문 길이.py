@@ -15,10 +15,8 @@ def solution(direction_list):
             continue
         new_position = [position[0] + diff[0], position[1] + diff[1]]
         
-        # 카운트
         isNew = True
         for history in history_list:
-            # 순서가 동일한 경우
             if (history[0] == position[0] and history[1] == position[1] and history[2] == new_position[0] and history[3] == new_position[1]) or (history[0] == new_position[0] and history[1] == new_position[1] and history[2] == position[0] and history[3] == position[1]):
                 isNew = False
                 break
